@@ -1,0 +1,46 @@
+replaceA replaceB replaceC reverse returnToStart halt error
+AllStatesEnd
+replaceA
+x x R replaceA
+_ _ S halt
+a x R replaceB
+b b S error
+c c S error
+RulesEnd!
+replaceB
+a a R replaceB
+x x R replaceB
+b x R replaceC
+c c S error
+_ _ S error
+RulesEnd!
+replaceC
+b b R replaceC
+x x R replaceC
+c x R reverse
+a a S error
+_ _ S error
+RulesEnd!
+reverse
+c c L returnToStart
+_ _ L returnToStart
+a a S error
+x x S error
+b b S error
+RulesEnd!
+returnToStart
+x x L returnToStart
+b b L returnToStart
+a a L returnToStart
+_ _ R replaceA
+RulesEnd!
+End!
+
+Syntax docs:
+what you read from the tape, with what you replace, go left(L), right(R) or stay in place(S), next state
+
+The first line is the tape itself.
+The next after MemoryTapeEnd are all the possible states.
+The third secition is for all the connections between the tapes.
+This Turing machine recognizes a^n b^n c^n languages
+The first state is considered the start of the automata

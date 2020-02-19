@@ -1,0 +1,53 @@
+\hypertarget{class_state}{}\section{State Class Reference}
+\label{class_state}\index{State@{State}}
+
+
+This class represents a state of the turing machine automata.  
+
+
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_af1646ba0a8934639b1b0038f26a2942b}\label{class_state_af1646ba0a8934639b1b0038f26a2942b}} 
+{\bfseries State} (std\+::string \+\_\+name=\char`\"{}\char`\"{}, int \+\_\+id=-\/1, std\+::map$<$ char, \mbox{\hyperlink{class_rule}{Rule}} $\ast$ $>$ \+\_\+rules=std\+::map$<$ char, \mbox{\hyperlink{class_rule}{Rule}} $\ast$ $>$())
+\item 
+\mbox{\Hypertarget{class_state_a676cd913a1596cc0538b5cb9de8ea908}\label{class_state_a676cd913a1596cc0538b5cb9de8ea908}} 
+{\bfseries State} (\mbox{\hyperlink{class_state}{State}} \&other)
+\item 
+\mbox{\Hypertarget{class_state_a6407270974b54d7494a43a08928441d2}\label{class_state_a6407270974b54d7494a43a08928441d2}} 
+\mbox{\hyperlink{class_state}{State}} \& {\bfseries operator=} (\mbox{\hyperlink{class_state}{State}} \&other)
+\item 
+\mbox{\Hypertarget{class_state_af6edc2f223c27ece41521c542db5cb93}\label{class_state_af6edc2f223c27ece41521c542db5cb93}} 
+int {\bfseries get\+Id} () const
+\item 
+\mbox{\Hypertarget{class_state_a7aec8a3796220945cd69224d6980cfe4}\label{class_state_a7aec8a3796220945cd69224d6980cfe4}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{class_state_ac707f5b0b09bceaf752099b3bd19cd80}\label{class_state_ac707f5b0b09bceaf752099b3bd19cd80}} 
+void {\bfseries set\+Name} (std\+::string \+\_\+name)
+\item 
+\mbox{\Hypertarget{class_state_a36c800c548160516e1f61cf39b37a329}\label{class_state_a36c800c548160516e1f61cf39b37a329}} 
+std\+::map$<$ char, \mbox{\hyperlink{class_rule}{Rule}} $\ast$ $>$ {\bfseries get\+Rules} () const
+\item 
+\mbox{\Hypertarget{class_state_aa0f2ef05f5cc5c34816138748a456d3c}\label{class_state_aa0f2ef05f5cc5c34816138748a456d3c}} 
+\mbox{\hyperlink{class_rule}{Rule}} {\bfseries get\+Rule} (char x)
+\item 
+\mbox{\Hypertarget{class_state_a8fd4cc3e095b2adbe58f2c0707ad3069}\label{class_state_a8fd4cc3e095b2adbe58f2c0707ad3069}} 
+void {\bfseries deserialize\+Rules} (int id, std\+::string line, char sym)
+\item 
+\mbox{\Hypertarget{class_state_aa224eaf7bfd9a6c542ebab9116b0e258}\label{class_state_aa224eaf7bfd9a6c542ebab9116b0e258}} 
+void \mbox{\hyperlink{class_state_aa224eaf7bfd9a6c542ebab9116b0e258}{reroute\+Rules}} (int old\+Id, int new\+Id)
+\begin{DoxyCompactList}\small\item\em reroutes all rules / edges that point to the old\+State\+Id to the new \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a state of the turing machine automata. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/State.\+h\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/State.\+cpp\end{DoxyCompactItemize}

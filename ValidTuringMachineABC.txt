@@ -1,0 +1,25 @@
+replaceA
+x{replaceA} -> x{replaceA}R
+_{replaceA} -> _{halt}S
+a{replaceA} -> x{replaceB}R
+b{replaceA} -> b{error}S
+c{replaceA} -> c{error}S
+a{replaceB} -> a{replaceB}R
+x{replaceB} -> x{replaceB}R
+b{replaceB} -> x{replaceC}R
+c{replaceB} -> c{error}S
+_{replaceB} -> c{error}S
+b{replaceC} -> b{replaceC}R
+x{replaceC} -> x{replaceC}R
+c{replaceC} -> x{reverse}R
+a{replaceC} -> a{error}S
+_{replaceC} -> _{error}S
+c{reverse} -> c{returnToStart}L
+_{reverse} -> _{returnToStart}L
+a{reverse} -> a{error}S
+b{reverse} -> b{error}S
+x{reverse} -> x{error}S
+x{returnToStart} -> x{returnToStart}L
+b{returnToStart} -> b{returnToStart}L
+a{returnToStart} -> a{returnToStart}L
+_{returnToStart} -> _{replaceA}R

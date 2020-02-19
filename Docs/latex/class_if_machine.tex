@@ -1,0 +1,53 @@
+\hypertarget{class_if_machine}{}\section{If\+Machine Class Reference}
+\label{class_if_machine}\index{IfMachine@{IfMachine}}
+
+
+Creates a turing machine that runs another based on the output of the first.  
+
+
+
+
+{\ttfamily \#include $<$If\+Machine.\+h$>$}
+
+Inheritance diagram for If\+Machine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_if_machine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_if_machine_a52a2550f6ee14ff51e1a79eb86acf903}\label{class_if_machine_a52a2550f6ee14ff51e1a79eb86acf903}} 
+void {\bfseries copy} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&cond, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M1, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M2)
+\item 
+\mbox{\Hypertarget{class_if_machine_ad4feea24920d0ad4f556dd5a17373a4a}\label{class_if_machine_ad4feea24920d0ad4f556dd5a17373a4a}} 
+{\bfseries If\+Machine} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&cond, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M1, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M2)
+\item 
+\mbox{\Hypertarget{class_if_machine_a1ea4d13598bb36c72053a392418e51d7}\label{class_if_machine_a1ea4d13598bb36c72053a392418e51d7}} 
+{\bfseries If\+Machine} (const \mbox{\hyperlink{class_if_machine}{If\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_if_machine_a2f6956f150976446f6f495ad6804ae37}\label{class_if_machine_a2f6956f150976446f6f495ad6804ae37}} 
+\mbox{\hyperlink{class_if_machine}{If\+Machine}} \& {\bfseries operator=} (\mbox{\hyperlink{class_if_machine}{If\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_if_machine_a72d5b2672deb3f5508ab0e60fed174c7}\label{class_if_machine_a72d5b2672deb3f5508ab0e60fed174c7}} 
+\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} $\ast$ \mbox{\hyperlink{class_if_machine_a72d5b2672deb3f5508ab0e60fed174c7}{copy}} () override
+\begin{DoxyCompactList}\small\item\em used for more complicated composition of if\+Machines, comp\+Machines and while\+Machines \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_machine_ac2f2f2832000841d864fe01d43c8406d}\label{class_if_machine_ac2f2f2832000841d864fe01d43c8406d}} 
+int \mbox{\hyperlink{class_if_machine_ac2f2f2832000841d864fe01d43c8406d}{head\+Location}} () override
+\begin{DoxyCompactList}\small\item\em Finds how far along we are from the start of the tape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_machine_a1b9bc5b1593a6dc9b501a768f05a6fdc}\label{class_if_machine_a1b9bc5b1593a6dc9b501a768f05a6fdc}} 
+bool {\bfseries run} (std\+::string file\+Name=\char`\"{}\char`\"{}) override
+\item 
+\mbox{\Hypertarget{class_if_machine_aec2e3335ee51e71f8195b49e77beebc3}\label{class_if_machine_aec2e3335ee51e71f8195b49e77beebc3}} 
+bool \mbox{\hyperlink{class_if_machine_aec2e3335ee51e71f8195b49e77beebc3}{run\+Pos}} (std\+::string file\+Name=\char`\"{}\char`\"{}, int head\+Pos=0, std\+::string dest\+File=\char`\"{}result.\+txt\char`\"{}) override
+\begin{DoxyCompactList}\small\item\em run\+Pos is used if you want to change the start position of run \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Creates a turing machine that runs another based on the output of the first. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/If\+Machine.\+h\end{DoxyCompactItemize}

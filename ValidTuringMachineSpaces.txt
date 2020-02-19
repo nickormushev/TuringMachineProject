@@ -1,0 +1,6 @@
+replaceA
+_{replaceA} -> _{replaceA}R
+a{replaceA} -> a{halt}S
+b{replaceA} -> b{error}S
+c{replaceA} -> c{error}S
+x{replaceA} -> x{error}S

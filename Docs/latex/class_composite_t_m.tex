@@ -1,0 +1,53 @@
+\hypertarget{class_composite_t_m}{}\section{Composite\+TM Class Reference}
+\label{class_composite_t_m}\index{CompositeTM@{CompositeTM}}
+
+
+Creates a turing machine composition. If the first ends it runs the second.  
+
+
+
+
+{\ttfamily \#include $<$Composite\+T\+M.\+h$>$}
+
+Inheritance diagram for Composite\+TM\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_composite_t_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_composite_t_m_a63fe59b2463b5e7e739a8674e1c9b73d}\label{class_composite_t_m_a63fe59b2463b5e7e739a8674e1c9b73d}} 
+void {\bfseries copy} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M1, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M2)
+\item 
+\mbox{\Hypertarget{class_composite_t_m_a1927c899ad8e2cc52f4e778f3537173c}\label{class_composite_t_m_a1927c899ad8e2cc52f4e778f3537173c}} 
+\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} $\ast$ \mbox{\hyperlink{class_composite_t_m_a1927c899ad8e2cc52f4e778f3537173c}{copy}} () override
+\begin{DoxyCompactList}\small\item\em used for more complicated composition of if\+Machines, comp\+Machines and while\+Machines \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_composite_t_m_a780924be1761258069fde6f33d3ee896}\label{class_composite_t_m_a780924be1761258069fde6f33d3ee896}} 
+{\bfseries Composite\+TM} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M1, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+\+T\+M2)
+\item 
+\mbox{\Hypertarget{class_composite_t_m_a6f63e2eee33c237cdeb89c837d9dc92e}\label{class_composite_t_m_a6f63e2eee33c237cdeb89c837d9dc92e}} 
+{\bfseries Composite\+TM} (const \mbox{\hyperlink{class_composite_t_m}{Composite\+TM}} \&other)
+\item 
+\mbox{\Hypertarget{class_composite_t_m_a4c5e4b9e5c25b0673043adf2cffbf3ec}\label{class_composite_t_m_a4c5e4b9e5c25b0673043adf2cffbf3ec}} 
+\mbox{\hyperlink{class_composite_t_m}{Composite\+TM}} \& {\bfseries operator=} (\mbox{\hyperlink{class_composite_t_m}{Composite\+TM}} \&other)
+\item 
+\mbox{\Hypertarget{class_composite_t_m_a450454441e373fc3cea1621c0fce3851}\label{class_composite_t_m_a450454441e373fc3cea1621c0fce3851}} 
+int \mbox{\hyperlink{class_composite_t_m_a450454441e373fc3cea1621c0fce3851}{head\+Location}} () override
+\begin{DoxyCompactList}\small\item\em I return only the T\+M2 head location because if we hit a false the while will end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_composite_t_m_a781f52a3416aeccba0f9855783b58ffe}\label{class_composite_t_m_a781f52a3416aeccba0f9855783b58ffe}} 
+bool {\bfseries run} (std\+::string file\+Name=\char`\"{}\char`\"{}) override
+\item 
+\mbox{\Hypertarget{class_composite_t_m_af85d1afdb9adfcd28001e5df2c671ff0}\label{class_composite_t_m_af85d1afdb9adfcd28001e5df2c671ff0}} 
+bool \mbox{\hyperlink{class_composite_t_m_af85d1afdb9adfcd28001e5df2c671ff0}{run\+Pos}} (std\+::string file\+Name=\char`\"{}\char`\"{}, int head\+Pos=0, std\+::string dest\+File=\char`\"{}result.\+txt\char`\"{}) override
+\begin{DoxyCompactList}\small\item\em run\+Pos is used if you want to change the start position of run \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Creates a turing machine composition. If the first ends it runs the second. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/Composite\+T\+M.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{class_while_machine}{}\section{While\+Machine Class Reference}
+\label{class_while_machine}\index{WhileMachine@{WhileMachine}}
+
+
+realisation of the while turing machine(while (\+T\+M1) do T\+M2) with a class and not rerouting automatas.  
+
+
+
+
+{\ttfamily \#include $<$While\+Machine.\+h$>$}
+
+Inheritance diagram for While\+Machine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_while_machine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_while_machine_ab7323936db4e386b1ac1c3852fdc4ed1}\label{class_while_machine_ab7323936db4e386b1ac1c3852fdc4ed1}} 
+void {\bfseries copy} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+cond, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+body)
+\item 
+\mbox{\Hypertarget{class_while_machine_a8aa083814c022764a3ead2ab6a68d418}\label{class_while_machine_a8aa083814c022764a3ead2ab6a68d418}} 
+\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} $\ast$ \mbox{\hyperlink{class_while_machine_a8aa083814c022764a3ead2ab6a68d418}{copy}} () override
+\begin{DoxyCompactList}\small\item\em used for more complicated composition of if\+Machines and while\+Machines \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_while_machine_a12dd54b05d3cdebce91a5c65dd1a2f25}\label{class_while_machine_a12dd54b05d3cdebce91a5c65dd1a2f25}} 
+{\bfseries While\+Machine} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+cond, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&\+\_\+body)
+\item 
+\mbox{\Hypertarget{class_while_machine_a7cf9c58084ef335835e2bc8295e5a943}\label{class_while_machine_a7cf9c58084ef335835e2bc8295e5a943}} 
+{\bfseries While\+Machine} (const \mbox{\hyperlink{class_while_machine}{While\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_while_machine_a82027b39573de6439c74c31ec123895a}\label{class_while_machine_a82027b39573de6439c74c31ec123895a}} 
+\mbox{\hyperlink{class_while_machine}{While\+Machine}} \& {\bfseries operator=} (\mbox{\hyperlink{class_while_machine}{While\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_while_machine_ab355d0629098690ece0a44c1e22d76ea}\label{class_while_machine_ab355d0629098690ece0a44c1e22d76ea}} 
+int \mbox{\hyperlink{class_while_machine_ab355d0629098690ece0a44c1e22d76ea}{head\+Location}} () override
+\begin{DoxyCompactList}\small\item\em As the name says it tells the head\+Location after calculations. If we are successful we are in the condition. That is why we only return it\textquotesingle{}s head location. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_while_machine_a63d981ab54e728345051cce59198c3c6}{run}} (std\+::string src\+File\+Name=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{class_while_machine_afd3e97cecf251c425baaa40292d4687b}\label{class_while_machine_afd3e97cecf251c425baaa40292d4687b}} 
+bool \mbox{\hyperlink{class_while_machine_afd3e97cecf251c425baaa40292d4687b}{run\+Pos}} (std\+::string src\+File\+Name=\char`\"{}\char`\"{}, int head\+Loc=0, std\+::string dest\+File=\char`\"{}result.\+txt\char`\"{}) override
+\begin{DoxyCompactList}\small\item\em run\+Pos is used if you want to change the start position of run \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+realisation of the while turing machine(while (\+T\+M1) do T\+M2) with a class and not rerouting automatas. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_while_machine_a63d981ab54e728345051cce59198c3c6}\label{class_while_machine_a63d981ab54e728345051cce59198c3c6}} 
+\index{WhileMachine@{WhileMachine}!run@{run}}
+\index{run@{run}!WhileMachine@{WhileMachine}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool While\+Machine\+::run (\begin{DoxyParamCaption}\item[{std\+::string}]{src\+File\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+If the body returns an error then we should return false. An error has occured If the condition returns false then we have exited the loop successfully so we return true 
+
+Reimplemented from \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/While\+Machine.\+h\end{DoxyCompactItemize}

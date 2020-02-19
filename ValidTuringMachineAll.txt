@@ -1,0 +1,6 @@
+read
+x{read} -> x{read}R
+_{read} -> _{halt}S
+a{read} -> a{read}R
+b{read} -> b{read}R
+c{read} -> c{read}R

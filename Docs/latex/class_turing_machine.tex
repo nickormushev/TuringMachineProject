@@ -1,0 +1,66 @@
+\hypertarget{class_turing_machine}{}\section{Turing\+Machine Class Reference}
+\label{class_turing_machine}\index{TuringMachine@{TuringMachine}}
+Inheritance diagram for Turing\+Machine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_turing_machine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turing_machine_abb09396f99114e2328c92a1f0869b6d2}\label{class_turing_machine_abb09396f99114e2328c92a1f0869b6d2}} 
+{\bfseries Turing\+Machine} (std\+::string filename=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{class_turing_machine_a00cb86fbf9ba3e3771c5b6176f956b4a}\label{class_turing_machine_a00cb86fbf9ba3e3771c5b6176f956b4a}} 
+{\bfseries Turing\+Machine} (const \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_turing_machine_a51792d43e9f52e2a70012e74b858e9bb}\label{class_turing_machine_a51792d43e9f52e2a70012e74b858e9bb}} 
+\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&other)
+\item 
+\mbox{\Hypertarget{class_turing_machine_a53f77ff296ce8aa297dd874045afcbef}\label{class_turing_machine_a53f77ff296ce8aa297dd874045afcbef}} 
+virtual bool \mbox{\hyperlink{class_turing_machine_a53f77ff296ce8aa297dd874045afcbef}{run\+Pos}} (std\+::string file\+Name=\char`\"{}\char`\"{}, int head\+Pos=0, std\+::string dest\+File=\char`\"{}result.\+txt\char`\"{})
+\begin{DoxyCompactList}\small\item\em run\+Pos is used if you want to change the start position of run \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_turing_machine_a0c7069a028f4dd7dfaef7e7a01b5f76a}\label{class_turing_machine_a0c7069a028f4dd7dfaef7e7a01b5f76a}} 
+virtual bool {\bfseries run} (std\+::string file\+Name=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{class_turing_machine_a2576f9427faf1671adf761dda185ed54}\label{class_turing_machine_a2576f9427faf1671adf761dda185ed54}} 
+bool \mbox{\hyperlink{class_turing_machine_a2576f9427faf1671adf761dda185ed54}{valid\+Deserialize}} (std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em this valid\+Deserialize is based on the syntax specified in the project overview. Reads machine from file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_turing_machine_a8798c2b0970f6f3abf5edf6d08e3d4c0}\label{class_turing_machine_a8798c2b0970f6f3abf5edf6d08e3d4c0}} 
+\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \& \mbox{\hyperlink{class_turing_machine_a8798c2b0970f6f3abf5edf6d08e3d4c0}{generate\+While\+Machine}} (\mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&cond, \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} \&body)
+\begin{DoxyCompactList}\small\item\em takes in Turing machines M1 and M2 and generetae a turing machine that does while(\+M1) do M2 by rerouting their automatas \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_turing_machine_a0264de81a9a8f060fecc049db6da5493}\label{class_turing_machine_a0264de81a9a8f060fecc049db6da5493}} 
+virtual int \mbox{\hyperlink{class_turing_machine_a0264de81a9a8f060fecc049db6da5493}{head\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Finds how far along we are from the start of the tape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_turing_machine_a8b5fdcf4377e6c13f6723b47d7bff119}\label{class_turing_machine_a8b5fdcf4377e6c13f6723b47d7bff119}} 
+std\+::list$<$ char $>$\+::iterator {\bfseries get\+Memory\+Tape\+Begin} ()
+\item 
+\mbox{\Hypertarget{class_turing_machine_a66a24e2d89e421fc4d150bfaef8154f1}\label{class_turing_machine_a66a24e2d89e421fc4d150bfaef8154f1}} 
+\mbox{\hyperlink{class_state}{State}} $\ast$ {\bfseries get\+Current\+State} () const
+\item 
+\mbox{\Hypertarget{class_turing_machine_ae07c4323b8af8c62361d3e7160df3c85}\label{class_turing_machine_ae07c4323b8af8c62361d3e7160df3c85}} 
+bool {\bfseries read\+Tape\+Input} (std\+::string file\+Name)
+\item 
+\mbox{\Hypertarget{class_turing_machine_a034ccd2c2c09b538cc3eeec824f16e1a}\label{class_turing_machine_a034ccd2c2c09b538cc3eeec824f16e1a}} 
+virtual \mbox{\hyperlink{class_turing_machine}{Turing\+Machine}} $\ast$ \mbox{\hyperlink{class_turing_machine_a034ccd2c2c09b538cc3eeec824f16e1a}{copy}} ()
+\begin{DoxyCompactList}\small\item\em used for creating more complex compisitions of while if and composite turing machines \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turing_machine_ad4eb274038c59c55538865dd34619cb3}\label{class_turing_machine_ad4eb274038c59c55538865dd34619cb3}} 
+static int {\bfseries next\+State\+Id} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_turing_machine_a703130b30c6c8115a9c60ca9b77b3790}\label{class_turing_machine_a703130b30c6c8115a9c60ca9b77b3790}} 
+bool {\bfseries check\+Quit} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/Turing\+Machine.\+h\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/Source.\+cpp\item 
+C\+:/\+Users/\+User/\+Desktop/\+Coding\+Projects/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine\+\_\+with\+\_\+\+I\+Ds -\/ Copy/\+S\+D\+P\+\_\+\+Project\+\_\+\+Turing\+\_\+\+Machine/Turing\+Machine.\+cpp\end{DoxyCompactItemize}
